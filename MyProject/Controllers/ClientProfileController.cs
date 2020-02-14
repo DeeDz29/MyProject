@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Dapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyProject.Models;
 
 namespace MyProject.Controllers
 {
@@ -13,12 +14,12 @@ namespace MyProject.Controllers
   [ApiController]
   public class ClientProfileController : ControllerBase
   {
-    public class ClientProfile
-    {
-      public int ClientProfileId { get; set; }
-      public string Name { get; set; }
-      public bool? HiddenInBackOffice { get; set; }
-    }
+    //public class ClientProfile
+    //{
+    //  public int ClientProfileId { get; set; }
+    //  public string Name { get; set; }
+    //  public bool? HiddenInBackOffice { get; set; }
+    //}
 
     // GET: api/ClientProfile
     [HttpGet]
